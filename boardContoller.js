@@ -14,12 +14,17 @@ app.use(express.static('public'));
 
 //앞으로 API 서버 기능을 확장하면서 필요한 미들웨어를 찾아서 추가할 것입니다.
 
-app.listen(3000, () => {
-	console.log('example app 3000! ');
-})
 
 //라우팅  : 클라이언트 요청과 서버의 로직을 연결하는 것.
-
+//Method가 GET방식의 '/' 과 hello wolrd를 출력하는 로직을 라우팅함.
+//여기에서 req, res는 nodejs 기본모듈인 HTTP의 클래스 ClientRequest, ServerResponse와는 다름.
+//express request 클래스, express response 클래스
 app.get('/', (req, res) => {
 	res.send('Hello World!\n');
 })
+
+app.listen(3000, () => {
+	console.log('example app 3000! ');
+});
+
+console.log('hohoho');

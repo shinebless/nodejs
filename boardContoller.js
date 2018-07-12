@@ -26,7 +26,4 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
 	console.log('example app 3000! ');
 });
-
-console.log('hohoho');
-
-heheheh
+console.log('fuckyou git');
